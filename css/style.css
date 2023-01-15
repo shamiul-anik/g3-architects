@@ -1,0 +1,316 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* Global Style */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: #FFFFFF;
+}
+
+/* Navbar and Hero Section */
+.header-section,
+.hero-section {
+	background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navbar, 
+.hero-contents {
+	max-width: 90rem;
+	margin-inline: auto;
+}
+
+/* Main Section */
+main {
+	max-width: 90rem;
+	margin-inline: auto;
+}
+
+
+/*** Common Design ***/
+/* Primary Button */
+.btn-primary {
+	width: 180px;
+	background-color: #FF900E;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 1.25rem; /* 1.25rem = 20px */
+	line-height: 1.5rem;
+	padding: 1.25rem 1.5rem;
+	border: 0;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+/* Primary Button Hover */
+.btn-primary:hover {
+	background-color: #f48a11;
+}
+
+/*** Navbar ***/
+.nav-brand-name,
+.nav-link {
+	text-decoration: none;
+}
+.navbar-list > .nav-item {
+	list-style: none;
+}
+
+
+/*** Navbar Section ***/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+.nav-brand-name{
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: #131313;
+}
+
+.navbar-list {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	color: #424242;
+}
+
+
+/*** Hero Section ***/
+.hero-section {
+	padding-top: 100px;
+	padding-bottom: 45px;
+}
+
+.hero-group {
+	max-width: 860px;
+	margin-inline: auto;
+	text-align: center;
+}
+
+.hero-title {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	color: #131313;
+}
+
+.hero-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: #727272;
+	margin: 30px 0;
+}
+
+.hero-image {
+	margin-top: 50px;
+}
+
+.hero-image > img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+
+/*** Quick list of Our Features Section ***/
+.quick-list-features-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 75px;
+	margin-top: 85px;
+}
+
+.quick-list-features-section > .feature-image {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
+
+.quick-list-features-section > .feature-image > .images > img {
+	width: 342px;
+	height: 342px;
+	border-radius: 8px;
+}
+
+.quick-list-features-section > .feature-contents {
+	max-width: 540px;
+}
+
+.quick-list-features-section > .feature-contents > .feature-group > .feature-title {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 53px;
+	color: #727272;
+}
+
+.quick-list-features-section > .feature-contents > .feature-group > .quick-list-features-section > .feature-contents > .feature-group > .feature-title > .highlighted-text-1 {
+	font-weight: 700;
+	color: #131313;
+}
+
+.quick-list-features-section > .feature-contents > .feature-group > .feature-title > .highlighted-text-2 {
+	font-weight: 700;
+	color: #FF900E;
+}
+
+.quick-list-features-section > .feature-contents > .feature-group > .feature-description {
+	margin-top: 24px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #727272;
+}
+
+
+/*** Features You will love & Enjoy ***/
+.love-enjoy-features-section {
+	margin-top: 130px;
+	display: flex;
+	position: relative;
+	/* justify-content: center; */
+	align-items: center;
+	/* gap: 55px; */
+}
+
+.love-enjoy-features-section > .features {
+	max-width: 585px;
+}
+
+/* Design: Bar on the Left Side of the Title */
+.love-enjoy-features-section > .features > .feature > .title::before {
+	content: "";
+	width: 5px;
+	height: 106px;
+	background-color: #FF900E;
+	position: absolute;
+	left: 0px;
+}
+
+.love-enjoy-features-section > .features > .feature > .title {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: #131313;
+	margin-left: 20px;
+}
+
+.love-enjoy-features-section > .features > .feature > .description {
+	margin-top: 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #727272;
+}
+
+.love-enjoy-features-section > .features > .feature-details {
+	margin-top: 30px;
+}
+
+.love-enjoy-features-section > .features > .feature-details > .content {
+	padding: 30px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+/* Set Last Content Margin Bottom to 0 */
+.love-enjoy-features-section > .features > .feature-details > .content-4 {
+	margin-bottom: 0px;
+}
+
+.love-enjoy-features-section > .features > .feature-details > .content > .feature-details-title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 23px;
+	color: #131313;
+}
+
+.love-enjoy-features-section > .features > .feature-details > .content > .feature-details-description {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #727272;
+}
+
+.love-enjoy-features-section > .feature-image {
+	max-width: 800px;
+	padding-left: 92px;
+	padding-bottom: 77px;
+	margin-left: 55px;
+	position: relative;
+}
+
+.love-enjoy-features-section > .feature-image > .person-image > img {
+	width: 708px;
+	height: 982px;
+	border-radius: 8px;
+}
+
+.love-enjoy-features-section > .feature-image > .experience-group {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 342px;
+	height: 200px;
+	background-color: #FF900E;
+	border-radius: 8px;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.love-enjoy-features-section > .feature-image > .experience-group > .experience-title {
+	font-weight: 700;
+	font-size: 65px;
+	line-height: 70px;
+}
+
+.love-enjoy-features-section > .feature-image > .experience-group > .experience-description {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+
+/*** Some Facts Section ***/
+.some-facts-section {
+	margin-top: 130px;
+}
+
+.some-facts-section > .some-facts-title {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: #131313;
+}
+
+.some-facts-section > .some-facts-description {
+	margin-top: 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #727272;
+}
