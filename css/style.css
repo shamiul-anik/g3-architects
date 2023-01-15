@@ -207,9 +207,7 @@ main {
 	margin-top: 130px;
 	display: flex;
 	position: relative;
-	/* justify-content: center; */
 	align-items: center;
-	/* gap: 55px; */
 }
 
 .love-enjoy-features-section > .features {
@@ -351,12 +349,13 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	transition: transform 0.3s ease-in;
+	transition: all 0.3s ease-in;
 }
 
 /* Transform Effect on Hover */
 .some-facts-section > .some-facts-contents > .fact:hover {
 	transform: translateY(-10px) scale(1.05);
+	box-shadow: 4px 6px 12px rgb(0 0 0 / 40%);
 }
 
 .some-facts-section > .some-facts-contents > .fact > img {
