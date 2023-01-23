@@ -176,12 +176,12 @@ main {
 
 .quick-list-features-section>.feature-contents>.feature-group>.feature-title {
 	font-weight: 500;
-	font-size: 45px;
+	font-size: 2.8rem;
 	line-height: 53px;
 	color: #727272;
 }
 
-.quick-list-features-section>.feature-contents>.feature-group>.quick-list-features-section>.feature-contents>.feature-group>.feature-title>.highlighted-text-1 {
+.quick-list-features-section>.feature-contents>.feature-group>.feature-title>.highlighted-text-1 {
 	font-weight: 700;
 	color: #131313;
 }
@@ -376,7 +376,7 @@ main {
 	margin-top: 5px;
 }
 
-/*** Our Sponspors Section ***/
+/*** Our Sponsors Section ***/
 .our-sponsors-section {
 	margin-top: 180px;
 	text-align: center;
@@ -428,7 +428,7 @@ main {
 /* Footer Left Contents Title */
 .contact-information>.left_contents>.title {
 	color: #131313;
-	font-size: 45px;
+	font-size: 2.8rem;
 	font-weight: 700;
 	line-height: 53px;
 	margin-bottom: 20px;
@@ -475,7 +475,7 @@ main {
 	width: 100%;
 	font-size: 18px;
 	line-height: 15px;
-	color: #f3f3f3;
+	color: #131313;
 	padding: 15px;
 	border: 1px solid lightgray;
 	border-radius: 8px;
@@ -506,7 +506,7 @@ main {
 	color: #424242;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
 	.navbar {
 		display: flex;
 		flex-direction: column;
@@ -526,8 +526,7 @@ main {
 	}
 
 	.hero-section {
-		padding-top: 50px;
-		padding-bottom: 30px;
+		padding: 50px 20px 30px 20px;
 	}
 
 	.hero-title {
@@ -535,17 +534,14 @@ main {
 		line-height: 50px;
 	}
 
-	.hero-image {
-		padding: 0 20px;
-	}
-
 	.quick-list-features-section {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 0;
-		margin-top: 50px;
+		margin-top: 30px;
 		flex-direction: column;
+		padding-inline: 20px;
 	}
 
 	.quick-list-features-section>.feature-image {
@@ -560,6 +556,13 @@ main {
 
 	.quick-list-features-section>.feature-contents>.feature-group {
 		text-align: center;
+	}
+
+	.quick-list-features-section>.feature-contents>.feature-group>.feature-title {
+		font-weight: 500;
+		font-size: 2.5rem;
+		line-height: 50px;
+		color: #727272;
 	}
 
 	.love-enjoy-features-section {
@@ -583,6 +586,7 @@ main {
 	.love-enjoy-features-section>.feature-image {
 		padding: 0;
 		margin-left: 0;
+		margin-top: 30px;
 	}
 
 	.love-enjoy-features-section>.feature-image>.person-image>img {
@@ -625,7 +629,7 @@ main {
 	}
 
 	.our-sponsors-section {
-		margin-top: 80px;
+		margin-top: 50px;
 	}
 
 	.our-sponsors-section>.sponsors>.sponsor-title {
@@ -644,12 +648,14 @@ main {
 	}
 
 	.contact-information {
-		margin-top: 80px;
+		margin-top: 50px;
 		flex-direction: column;
 	}
 
 	.contact-information>.left_contents>.title {
 		text-align: center;
+		font-size: 2.5rem;
+		line-height: 50px;
 	}
 
 	.contact-information>.left_contents>.social {
